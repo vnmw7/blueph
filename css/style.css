@@ -528,10 +528,14 @@ ul.list-checkmarks li {
 .features-section ul.feature-squares {
   width: 90%;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 80px;
 }
 
 .features-section ul.feature-squares li {
-  width: 50%;
+  width: 100%;
   padding: 3%;
   float: left;
 }
