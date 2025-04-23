@@ -149,7 +149,10 @@
           </div>
         </div>
 
-        <section class="videos" style="text-align: center; padding: 20px">
+        <section
+          class="videos"
+          style="text-align: center; padding: 20px; margin: 8rem"
+        >
           <div class="video-container">
             <iframe
               width="560"
@@ -168,8 +171,15 @@
       </section>
       <!-- News / Updates -->
       <section class="updates" id="updates">
-        <div class="updatesContainer">
-          
+        <div class="updatesContainer"></div>
+      </section>
+
+      <section>
+        <div>
+          <h2 style="text-align: center">Protecting the Blue Environment</h2>
+        </div>
+        <div>
+          <img src="assets/Infographic The Blue Economy in 2020_0.jpg" />
         </div>
       </section>
 
@@ -323,7 +333,7 @@
               </svg>
             </div>
 
-            <h1 style="margin-top: 8rem">Take Action</h1>
+            <h1 style="margin-top: 8rem; color: white">Take Action</h1>
 
             <button style="background-color: white; color: #0777b0">
               Donate
@@ -355,6 +365,7 @@
         (this.speedx = Math.ceil(Math.random() * 2)),
           (this.speedy = Math.ceil(Math.random() * 2));
       }
+      ta;
 
       circle() {
         ctx.beginPath();
