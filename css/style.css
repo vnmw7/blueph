@@ -43,7 +43,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -84,95 +84,83 @@ object,
 video {
   max-width: 100%;
 }
-
-.container{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
+.foreground {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.hero{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
+.background {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.main{
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../assets/457501298_519893084025824_2381750191440981060_n.jpg);
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    border-radius: 12px;
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-.content{
-    width: 60%;
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-.content h1{
-    color: #fff;
+.main {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/457501298_519893084025824_2381750191440981060_n.jpg);
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  border-radius: 12px;
 }
 
-.nav{
-    height: 5vh;
-    padding: 1%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-items: center;
-    justify-content: space-between;
-    align-items: center;
+.content {
+  width: 60%;
 }
 
-.logo{
-    width: 20%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
+.nav {
+  width: 100%;
+  height: 5vh;
+  padding: 1%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logoImg{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    display: flex;
-    flex-flow: row nowrap;
-    
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: left;
+  background-color: #42966e;
 }
 
-.logoImg img{
-    width: 100%;
-    object-fit: contain;
+.navBar {
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }
 
-.logoText{
-    width: 100% ;
-}
-
-.logoText h1{
-    width: 100%;
-    color: #000000;
-}
-
-.navBar{
-    width: 80%;
-    display: flex;
-    justify-content: right;
-}
-
-.navBar ul{
-    width: 70%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    justify-items: right;
+.navBar ul {
+  width: 70%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  justify-items: right;
 }
 
 .navBar li {
@@ -257,7 +245,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #070063;
+  color: #000000;
 }
 
 ::selection {
@@ -298,8 +286,8 @@ a.button-1,
 a.button-2,
 button {
   color: #fff;
-  background: #0777b0;
-  border: 2px solid #0777b0;
+  background: #5dae87;
+  border: 2px solid #5dae87;
   border-radius: 999px;
   margin-top: -2px;
   margin-left: 10px;
