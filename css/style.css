@@ -265,7 +265,20 @@ video {
     list-style-type: none;
 }
 
+.updates{
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.updatesContainer{
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  grid-template-rows: repeat(3, 2fr);
+  gap: 10px;
+}
 
 a {
   text-decoration: none;
